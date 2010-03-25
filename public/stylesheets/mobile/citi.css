@@ -1,0 +1,33 @@
+body > ul > li.error {
+    background: url(/images/mobile/iui/listError.png) repeat-x;
+    font-size: 32px;
+}
+body > ul > li.header {
+    background: url(/images/mobile/iui/listHeader.png) repeat-x;
+    padding-top: 8px;
+    text-align: left;
+}
+body > ul > li.header1 {
+    background: url(/images/mobile/iui/listHeader1.png) repeat-x;
+}
+body > ul > li.header2 {
+    background: url(/images/mobile/iui/listHeader2.png) repeat-x;
+}
+body > ul > li.header3 {
+    background: url(/images/mobile/iui/listHeader3.png) repeat-x;
+}
+.small-gray {
+    font-size: 0.75em;
+    color: #b0b0b0;
+}
+.warning {
+    font-size: 1.5em;
+    color: #ba3232;
+}
+.panel > h2 {
+    margin: 10px 14px 3px 14px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+}
+.panel > fieldset {
+    margin: 0 0 10px 0;
+}

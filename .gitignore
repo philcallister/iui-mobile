@@ -1,0 +1,10 @@
+.rakeTasks
+log/*.log
+tmp/**/*
+doc/api
+doc/app
+nbproject
+public/.tmp*
+.tmp*~
+.loadpath
+.project

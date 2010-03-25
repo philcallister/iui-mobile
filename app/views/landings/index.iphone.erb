@@ -1,0 +1,23 @@
+<ul title='Welcome' selected='true'>
+  <li class="group header"><img src="/images/mobile/logo.png" /></li>
+  <li class="group header1">Welcome to Citi Mobile Banking</li>
+  <li><%= link_to("Login", "#login") %></li>
+  <li><%= link_to("What is Mobile Banking?", "#about") %></li>
+</ul>
+<div id="about" class="panel" title="Mobile Banking">
+  <h2>Available to all Online Banking customers. With Mobile Banking you can use your iPhone or iPod touch to easily and securely check your balance and pay your bills.  It’s fast, easy and convenient - just use the Safari browser on your iPhone or iPod touch and get started.</h2>
+</div>
+<form id="login" title="Login" class="panel" method="post" action="login.php" target="_self">
+  <h2>Login</h2>
+  <fieldset>
+    <div class="row">
+      <label>Username</label>
+      <input type="text" name="username" value=""/>
+    </div>
+    <div class="row">
+      <label>Password</label>
+      <input type="password" name="password" value=""/>
+    </div>
+  </fieldset>
+  <a class="redButton" type="submit" href="#">Login</a>
+</form>
