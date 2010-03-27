@@ -1,0 +1,24 @@
+<% form_for :account, :url => account_path(@ua[:account]), :html => {:id => 'confirm', :title => 'Confirm', :class => 'panel', :method => :put}do |f| %>
+  <h2>Starting Balance</h2>
+  <fieldset>
+    <legend></legend>
+    <div class="row">
+      <label><%= @ua[:balance] %></label>
+    </div>
+  </fieldset>
+  <h2>Payment</h2>
+  <fieldset>
+    <legend></legend>
+    <div class="row">
+      <label><%= @payment %></label>
+    </div>
+  </fieldset>
+  <h2>Final Balance</h2>
+  <fieldset>
+    <legend></legend>
+    <div class="row">
+      <label><%= @final_balance %></label>
+    </div>
+  </fieldset>
+  <a class="redButton" type="submit" href="#">Confirm</a>
+<% end %>

@@ -1,0 +1,17 @@
+<% form_for :account, :url => edit_account_path(@ua[:account]), :html => {:id => 'payment', :title => 'Payment', :class => 'panel', :method => :post}do |f| %>
+  <h2>Starting Balance</h2>
+  <fieldset>
+    <legend></legend>
+    <div class="row">
+      <label><%= @ua[:balance] %></label>
+    </div>
+  </fieldset>
+  <h2>Payment</h2>
+  <fieldset>
+    <div class="row">
+      <%= f.label :amount %>
+      <%= f.text_field :amount, :size => '', :value => @ua[:balance] %>
+    </div>
+  </fieldset>
+  <a class="redButton" type="submit" href="#">Schedule Payment</a>
+<% end %>

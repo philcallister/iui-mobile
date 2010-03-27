@@ -1,0 +1,22 @@
+<div id="account" class="panel" title="Account">
+  <h2>Account</h2>
+  <fieldset>
+    <legend></legend>
+    <div class="row">
+      <label><%= @ua[:name] %></label>
+    </div>
+    <div class="row">
+      <label><%= format_account(@ua[:account]) %></label>
+    </div>
+  </fieldset>
+  <h2>Current Balance</h2>
+  <fieldset>
+    <legend></legend>
+    <div class="row">
+      <label><%= @ua[:balance] %></label>
+    </div>
+  </fieldset>
+  <% form_for :account, :url => account_path(@ua[:account]), :html => {:method => :get} do %>
+  <a class="redButton" type="submit" href="#">Select Payment Amount</a>
+  <% end %>
+</div>

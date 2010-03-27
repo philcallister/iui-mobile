@@ -2,14 +2,15 @@ class LoginsController < ApplicationController
 
   before_filter :detect_browser
 
-  def new
+  def create
+    @ua = find_by_user(params[:user][:username])
     respond_to do |format|
-      format.iphone {render :action => :new}
+      format.iphone {render :action => :create, :layout => false}
     end
   end
 
-  def create
-    
+  def destroy
+    # kill a session here
   end
 
 end
